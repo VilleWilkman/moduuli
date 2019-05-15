@@ -2,14 +2,10 @@ install_git:
   pkg.installed:
     - pkgs:
       - git
-  git.lastest:
-    - name: https://github.com/VilleWilkman/moduuli.git
-    - target: /moduuli
+  git.latest:
+    - name: https://github.com/VilleWilkman/minion.git
+    - target: /minion
 
-'cd moduuli && sudo chmod +rx setuplinux.sh && ./setuplinux.sh':
+'cd minion && sudo chmod +rx minion.sh && ./minion.sh':
   cmd.run
 
-install_steam:
-  pkg.installed:
-    - pkgs:
-      - steam
