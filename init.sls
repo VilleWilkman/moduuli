@@ -3,9 +3,8 @@ install_git:
     - pkgs:
       - git
   git.latest:
-    - name: https://github.com/VilleWilkman/minion.git
-    - target: /minion
+    - name: https://github.com/VilleWilkman/asentaja.git
+    - target: /asentaja
 
-'cd minion && sudo chmod +rx minion.sh && ./minion.sh':
+'cd asentaja && sudo chmod +rx asentaja.sh && ./asentaja.sh':
   cmd.run
-
